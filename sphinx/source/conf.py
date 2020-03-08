@@ -95,8 +95,8 @@ html_context = {
 "github_version": "master/source/",
 }
 
-github_url = 'https://github.com/MTH548'
-html_baseurl = 'https://www.mth548.org'
+github_url = 'https://github.com/CDSE2020'
+
 # List of arguments to be passed to the kernel that executes the notebooks:
 nbsphinx_execute_arguments = [
     "--InlineBackend.figure_formats={'svg', 'pdf'}",

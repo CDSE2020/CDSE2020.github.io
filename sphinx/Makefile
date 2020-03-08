@@ -1,4 +1,3 @@
-SHELL=/bin/bash -O extglob -c
 # Minimal makefile for Sphinx documentation
 #
 
@@ -7,7 +6,7 @@ SHELL=/bin/bash -O extglob -c
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
-BUILDDIR      = ../..
+BUILDDIR      = _built
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -23,6 +22,6 @@ help:
 
 github:
 	@make html
-	@cp -a ./$(BUILDDIR)/html/. ..
+	@cp -av ./$(BUILDDIR)/html/. ..
 	
 
