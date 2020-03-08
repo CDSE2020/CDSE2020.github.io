@@ -1,0 +1,49 @@
+div.nboutput.container {
+    max-height: 400px;
+    overflow: auto;
+    margin-top: 15px!important;
+    margin-bottom: 10px!important;
+    color: slategray;
+}
+
+div.nbinput.container {
+    max-height: 700px;
+    overflow: auto;
+    margin-top: 0px!important;
+    margin-bottom: 15px!important;
+}
+
+/* do not show netebook cell In/Out prompts */
+div.prompt {
+    min-width: 0px!important;
+}
+
+/* set page content width */
+.wy-nav-content {
+    max-width: 900px!important;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* add some padding to the code output area, so that
+   the horizontal scoll bar does not obstruct the content */
+div.nboutput.container div.output_area div[class*=highlight] > pre {
+    padding-bottom: 15px!important;
+}
+
+
+/* override table width restrictions */
+@media screen and (min-width: 300px) {
+
+    .wy-table-responsive table td {
+       /* !important prevents the common CSS stylesheets from overriding
+          this as on RTD they are loaded after this stylesheet */
+       white-space: normal !important;
+    }
+ 
+    .wy-table-responsive {
+       overflow: visible !important;
+    }
+ }
