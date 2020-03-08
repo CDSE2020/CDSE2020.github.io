@@ -230,19 +230,19 @@ either on Piazza or by email <a class="reference external" href="mailto:badzioch
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>from importlib import import_module
 import sys
 ok = True
-major, minor, *_ = sys.version_info
+major, minor = sys.version_info[:2]
 if not (major == 3 and minor &gt;= 6):
-    print(f&quot;ERROR: Your are using Python {major}.{minor}. Please upgrade to Python 3.7.\n&quot;)
+    print(&quot;ERROR: Your are using Python {}.{}. Please upgrade to Python 3.7.\n&quot;.format(major, minor))
     ok = False
 else:
-    print(6*&quot; &quot;+ f&quot;Python {major}.{minor} : OK&quot; )
+    print(6*&quot; &quot;+ &quot;Python {}.{} : OK&quot;.format(major, minor))
     for module in [&quot;numpy&quot;, &quot;pandas&quot;, &quot;bs4&quot;, &quot;matplotlib&quot;, &quot;bokeh&quot;, &quot;requests&quot;]:
         try:
             m = import_module(module)
             ver = m.__version__
-            print(f&quot;{module:&gt;10} {ver:&lt;6}: OK&quot;)
+            print(&quot;{:&gt;10} {:&lt;6}: OK&quot;.format(module, ver))
         except ImportError:
-            print(f&quot;{module:&gt;16} : ERROR&quot;)
+            print(&quot;{:&gt;16} : ERROR&quot;.format(module))
             ok = False
 if ok:
     print(&quot;\nEverything seems to be working fine!&quot;)

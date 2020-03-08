@@ -62,22 +62,22 @@ Software Installation
 
    .. code-block:: none
 
-        from importlib import import_module
-        import sys
-        ok = True
-        major, minor, *_ = sys.version_info
-        if not (major == 3 and minor >= 6):
-            print(f"ERROR: Your are using Python {major}.{minor}. Please upgrade to Python 3.7.\n")
-            ok = False
-        else:
-            print(6*" "+ f"Python {major}.{minor} : OK" )
-            for module in ["numpy", "pandas", "bs4", "matplotlib", "bokeh", "requests"]:
-                try:
-                    m = import_module(module)
-                    ver = m.__version__
-                    print(f"{module:>10} {ver:<6}: OK")
-                except ImportError:
-                    print(f"{module:>16} : ERROR")
-                    ok = False
-        if ok:
-            print("\nEverything seems to be working fine!")
+         from importlib import import_module
+         import sys
+         ok = True
+         major, minor = sys.version_info[:2]
+         if not (major == 3 and minor >= 6):
+             print("ERROR: Your are using Python {}.{}. Please upgrade to Python 3.7.\n".format(major, minor))
+             ok = False
+         else:
+             print(6*" "+ "Python {}.{} : OK".format(major, minor))
+             for module in ["numpy", "pandas", "bs4", "matplotlib", "bokeh", "requests"]:
+                 try:
+                     m = import_module(module)
+                     ver = m.__version__
+                     print("{:>10} {:<6}: OK".format(module, ver))
+                 except ImportError:
+                     print("{:>16} : ERROR".format(module))
+                     ok = False
+         if ok:
+             print("\nEverything seems to be working fine!")
