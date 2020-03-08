@@ -3,10 +3,6 @@
 Table of contents
 =========================
 
-Contents:
-~~~~~~~~~~~~
-
-
 .. toctree::
    :maxdepth: 1
 
