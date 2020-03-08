@@ -90,7 +90,7 @@ html_context = {
 #'source_url_prefix': "https://github.com/MTH548",
 "github_host": "github.com",
 "github_user": "CDSE2020",
-"github_repo": 'CDSE2020',
+"github_repo": 'CDSE2020.github.io',
 "theme_vcs_pageview_mode" : 'blob',
 "github_version": "master/sphinx/source/",
 }
