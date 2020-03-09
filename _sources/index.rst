@@ -39,7 +39,7 @@ Software Installation
    If you have Anaconda previously installed, make sure that it includes Python 3.6,
    3.7 or 3.8, and fairly recent versions of the the Jupter Notebook and the following
    Python packages: numpy, matplotlib, bokeh, pandas, requests, Beautiul Soup (bs4).
-   Upgrade if needed.If you are installing Anaconda for the first time, you don't need
+   Upgrade if needed. If you are installing Anaconda for the first time, you don't need
    to worry about it, everything is included in the distribution.
 
 2. A part of the Anaconda distribution is the Jupyter Notebook app.
