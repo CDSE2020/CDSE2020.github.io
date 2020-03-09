@@ -6,7 +6,7 @@
 CDSE Days 2020 Python Workshop
 ==============================
 
-*Welcome to the Python workshop page. Below is some informations about the workshop
+*Welcome to the Python workshop page. Below is some information about the workshop
 and how to prepare for it. Additional materials will be posted here later on.
 I am looking forward to meeting you on March 30!*
 
@@ -15,13 +15,19 @@ I am looking forward to meeting you on March 30!*
 General information
 -------------------
 
+* The workshop will present basic features of Python and Jupyter Notebook. No Python
+  background is expected, but we will be proceeding at a brisk pace, so general programming
+  experience will be helpful. In the second part of the workshop I will demonstrate
+  a few useful Python libraries - requests, pandas and beautiful soup, and show they
+  can be used for gathering and analyzing data.
+
 * This will be a hands-on workshop - we will write and execute code the entire time.
   All participants need to bring laptops. Any operating system (Windows/Mac/Linux) is fine.
   Instructions how to install software we will use are posted below.
 
 * I set up a `Piazza <http://piazza.com/buffalo/spring2020/cdse2020>`_ page
   for the workshop. Please sign up so you can post questions and comments before,
-  during, and after the workshop, or perhaps comment on questions posted by others.
+  during, and after the workshop.
 
 
 Software Installation
